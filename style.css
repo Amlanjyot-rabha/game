@@ -1,0 +1,102 @@
+body{
+    background-color: black;
+}
+#body{
+
+}
+#game{
+    margin-left:35vw;
+    margin-top: 8vh;
+    color:white;
+    display: grid;
+    grid-template-columns:repeat(3, 10vw);
+    grid-template-rows:repeat(3, 10vw);
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.gameContener{
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15vh;
+     
+}
+#clear{
+    margin-left: 48%;
+    margin-top: 40px;
+    height: 80px;
+}
+#clear button{
+    height: 50px;
+    width: 80px;
+}
+#win{
+    border: 1px solid white;
+    height: 30px;
+    width: 200px;
+    margin-top:80px;
+    margin-left: 43.9%;
+    color: white;
+    text-align: center;
+    padding:5px;
+    font-size: 28px;
+}
+@media (max-width:390px) {
+ #game{
+    margin-left:20vw;
+    margin-top: 30vh;
+    color:white;
+    display: grid;
+    grid-template-columns:repeat(3, 20vw);
+    grid-template-rows:repeat(3, 20vw);
+    font-family: 'Hind Siliguri', sans-serif 
+
+ }
+ .gameContener{
+    border: 4px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+ }
+
+ #clear{
+    margin-left: 43%;
+    margin-top: 40px;
+    height: 80px;
+}
+
+#clear button{
+    height: 40px;
+    width: 60px;
+}
+
+#win{
+    border: 1px solid white;
+    height: 25px;
+    width: 150px;
+    margin-top:60px;
+    margin-left: 28%;
+}
+.gameContener:hover{
+    background-color:rgba(255, 255, 255, 0.2);
+   
+  }
+
+}
+.gameContener:hover{
+  background-color:rgba(255, 255, 255, 0.2);
+ 
+}
+.bt{
+    border-top: 0px;
+}
+.bb{
+    border-bottom: 0px;
+}
+.bl{
+    border-left: 0px;
+}
+.br{
+    border-right: 0px;
+}
