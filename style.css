@@ -41,7 +41,48 @@ body{
     padding:5px;
     font-size: 28px;
 }
-@media (max-width:390px) {
+@media(max-width:850px) {  
+    #game{
+        margin-left:20vw;
+        margin-top: 20vh;
+        color:white;
+        display: grid;
+        grid-template-columns:repeat(3, 20vw);
+        grid-template-rows:repeat(3, 20vw);
+        font-family: 'Hind Siliguri', sans-serif 
+    
+     }
+
+     .gameContener{
+        border: 4px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:12vh;
+     }
+     #win{
+        border: 1px solid white;
+        height: 45px;
+        width: 250px;
+        margin-top:60px;
+        margin-left: 34%;
+    }
+
+    #clear{
+        margin-left: 41%;
+        margin-top: 40px;
+        height: 80px;
+        width: 150px;
+    }
+    
+    #clear button{
+        height: 60px;
+        width: 80px;
+        font-size:1.5rem;
+        width: 150px;
+    }
+} 
+@media (max-width:450px) {
  #game{
     margin-left:20vw;
     margin-top: 30vh;
@@ -99,4 +140,10 @@ body{
 }
 .br{
     border-right: 0px;
+}
+
+
+/* for mobile */
+@media only screen and(max-width:450px){
+   
 }

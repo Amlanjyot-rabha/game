@@ -5,7 +5,7 @@ let data=document.getElementsByClassName("gameContener")
 // let game=false;
  
 const  clearScreen=()=>{
-  let box =document.getElementsByClassName("text")
+  let box=document.getElementsByClassName("text")
   Array.from(box).forEach(element=>{
     element.innerText=" " 
     info.innerText=" "
@@ -21,10 +21,10 @@ const change=()=>{
     return turn==="x"? "o":"x";
 }
 
- 
 
-const checkwin=()=>{
-  let box =document.getElementsByClassName("text")
+  const checkwin=()=>{
+  let box=document.getElementsByClassName("text")
+  
   let wins=[
     [0,1,2],
     [3,4,5],
@@ -38,27 +38,21 @@ const checkwin=()=>{
   
   wins.forEach(e =>{
  
-  let box =document.getElementsByClassName("text")
+  let box=document.getElementsByClassName("text")
   
    if( (box[e[0]].innerText===box[e[1]].innerText) && (box[e[2]].innerText===box[e[1]].innerText) && (box[e[0]].innerText !=="") ){
      info.innerText=box[e[0]].innerText+" is won"
      gomeOver.play()
-  
+ 
   setTimeout(() => {
     let box =document.getElementsByClassName("text")
     Array.from(box).forEach(element=>{
       element.innerText=" " 
       info.innerText=" "
-      turn="x"
+      turn=change()
     })
   }, 2000);
-
-     
-  
    }
-  
-   
-   
    })
   
 }
@@ -77,5 +71,4 @@ Array.from(data).forEach(element =>{
  })
  
 
- 
  
